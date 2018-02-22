@@ -7,3 +7,9 @@ Primitive data types are data types provided as a basic building block in a lang
 - [Bits and Bytes](./primitives/bits-bytes-binary-memory.md#bits-and-bytes)
 - [Binary](./primitives/bits-bytes-binary-memory.md#binary)
 - [Memory](./primitives/bits-bytes-binary-memory.md#memory)
+
+- [Integers](./primitives/bits-bytes-binary-memory.md#integers)
+- [Floating Point Numbers](./primitives/bits-bytes-binary-memory.md#floating-point-numbers)
+- [Characters](./primitives/bits-bytes-binary-memory.md#characters)
+- [Booleans](./primitives/bits-bytes-binary-memory.md#booleans)
+- [Pointers](./primitives/bits-bytes-binary-memory.md#pointers)
