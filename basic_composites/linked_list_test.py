@@ -50,6 +50,37 @@ class LinkedListTest(unittest.TestCase):
             head_data
         )
 
+    def test_delete_node_middle(self):
+        head_data = 'tacos'
+        mid_data = 'whiskey'
+        tail_data = 'burritos'
+
+        linked_list = self.create_linked_list(head_data, mid_data, tail_data)
+        linked_list.delete_node(mid_data)
+
+        self.assertEqual(
+            linked_list.head.data,
+            head_data
+        )
+
+        self.assertEqual(
+            linked_list.head.next.data,
+            tail_data
+        )
+
+    def test_delete_node_head(self):
+        head_data = 'tacos'
+        mid_data = 'whiskey'
+        tail_data = 'burritos'
+
+        linked_list = self.create_linked_list(head_data, mid_data, tail_data)
+        linked_list.delete_node(head_data)
+
+        self.assertEqual(
+            linked_list.head.data,
+            mid_data
+        )
+
     def test_get_nonexistent_node(self):
         head_data = 'tacos'
         tail_data = 'burritos'
