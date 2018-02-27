@@ -10,4 +10,12 @@ Linked lists can be both singly linked listed and doubly linked lists. A singly 
 
 The 'head' of a linked list is the first node.
 
+
+### Pros
+- Dynamic size
+- Easy insertion and deletion
+### Cons
+- Can't random access. Need to access all elements sequentially starting from begining
+- Need to have space for pointer along with each element
+
 [Linked List Implementation - Python](./linked_list.py)
