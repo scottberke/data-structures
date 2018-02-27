@@ -12,6 +12,7 @@ Multi-dimensional arrays, or arrays of arrays, can be used to represent graphs a
 
 ## Common Operations:
 ### Python
+
 ```python
 # Create
 >>> arr = []
@@ -106,6 +107,7 @@ whiskey
 ```
 
 ### Ruby
+[Docs](http://ruby-doc.org/core-2.4.1/Array.html)
 ```ruby
 # Create
 [1] pry(main)> arr = []
