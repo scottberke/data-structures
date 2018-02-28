@@ -159,10 +159,3 @@ class Node:
 
     def next(self):
         return self.next
-
-
-l = LinkedList()
-l.append('tacos')
-l.append('tequila')
-l.append('burritos')
-l.push('salsa')

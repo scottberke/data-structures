@@ -18,5 +18,14 @@ The 'head' of a linked list is the first node.
 - Can't random access. Need to access all elements sequentially starting from begining
 - Need to have space for pointer along with each element
 
+### Runner Technique
+- Used in many linked list problems
+- Uses two pointers to iterate through the list, a slow one and a fast one
+
+## Implementation
 [Linked List Implementation - Python](./linked_list.py)
 [Linked List Test Cases - Python](./linked_list_test.py)
+
+
+## Practice Problems
+[Remove Dups](./practice_problems.md#remove-dups)
