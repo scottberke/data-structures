@@ -1,4 +1,3 @@
-
 class LinkedList:
     def __init__(self, head=None):
         self.head = head
@@ -6,6 +5,7 @@ class LinkedList:
 
     def get(self, data):
         """
+        O(n)
         Input:
             data = Value to search for in the linked list
         Output:
@@ -25,6 +25,7 @@ class LinkedList:
 
     def append(self, data):
         """
+        O(n) or O(1) if keeping track of tail
         Input:
             data = Value to append to the end of the linked list
         Output:
@@ -46,6 +47,7 @@ class LinkedList:
 
     def push(self, data):
         """
+        O(1)
         Input:
             data = Value to add to the start of the linked list
         Output:
@@ -64,6 +66,7 @@ class LinkedList:
 
     def insert_after(self, after_node, data):
         """
+        O(n)
         Input:
             after_node = data value of node to insert after
             data = Value to add to the start of the linked list
@@ -92,6 +95,7 @@ class LinkedList:
 
     def delete_node(self, data):
         """
+        O(n)
         Input:
             data = value of node to delete from the linked list
         Output:
@@ -109,6 +113,7 @@ class LinkedList:
                 current_node = current_node.next
 
         current_node.next = current_node.next.next
+
         return current_node
 
 
@@ -146,7 +151,7 @@ class LinkedList:
         while current_node.next:
             current_node = current_node.next
             yield current_node
-            
+
 class Node:
     def __init__(self, data):
         self.data = data
