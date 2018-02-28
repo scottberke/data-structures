@@ -1,14 +1,11 @@
 import unittest
-
 from io import StringIO
 from contextlib import *
 
-
 from linked_list import *
 
-import pdb
 class LinkedListTest(unittest.TestCase):
-    # Helper functions
+    # Helpers
     def create_linked_list(*data):
         linked_list = LinkedList()
         for value in data[1:]:
@@ -117,6 +114,15 @@ class LinkedListTest(unittest.TestCase):
             linked_list.head.next.data,
             insert_data)
 
+    def test_linked_list_as_iterable(self):
+        head_data = 'tacos'
+        tail_data = 'burritos'
+        linked_list = self.create_linked_list(head_data, tail_data)
+
+        for node in linked_list.items():
+            self.assertTrue(
+                node.data in [head_data, tail_data]
+            )
 
 if __name__ == '__main__':
     unittest.main()
