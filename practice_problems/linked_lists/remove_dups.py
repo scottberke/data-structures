@@ -2,6 +2,7 @@ import sys
 sys.path.append('../../basic_composites/linked_lists')
 from linked_list import *
 
+# O(n)
 def remove_dups(linked_list):
     # Set for unique node data
     ref_node_data = { linked_list.head.data }
