@@ -1,7 +1,8 @@
+import pdb
 class LinkedList:
     def __init__(self, head=None):
         self.head = head
-
+        self.tail = None
 
     def get(self, data):
         """
@@ -40,6 +41,8 @@ class LinkedList:
             while current_node.next:
                 current_node = current_node.next
             current_node.next = new_node
+
+        self.tail = new_node
 
         return new_node
 
@@ -87,7 +90,10 @@ class LinkedList:
 
         next_node = current_node.next
         current_node.next = new_node
-        new_node.next = next_node
+        if not new_node.next:
+            self.tail = new_node
+        else:
+            new_node.next = next_node
 
         return new_node
 
@@ -97,22 +103,36 @@ class LinkedList:
         """
         O(n)
         Input:
-            data = value of node to delete from the linked list
+            data || Node = Node or value of node to delete from the linked list
         Output:
             node = node that was just removed
         """
         current_node = self.head
-        if current_node.data == data:
-            self.head = current_node.next
-            return current_node
+        if type(data) == Node:
+            if current_node == data:
+                self.head = current_node.next
+                return current_node
 
-        while current_node.next.data != data:
-            if not current_node.next:
-                raise ValueError("Node not in linked list")
-            else:
-                current_node = current_node.next
+            while current_node.next != data:
+                if not current_node.next:
+                    raise ValueError("Node not in linked list")
+                else:
+                    current_node = current_node.next    
+        else:
+            if current_node.data == data:
+                self.head = current_node.next
+                return current_node
+
+            while current_node.next.data != data:
+                if not current_node.next:
+                    raise ValueError("Node not in linked list")
+                else:
+                    current_node = current_node.next
 
         current_node.next = current_node.next.next
+
+        if not current_node.next:
+            self.tail = current_node
 
         return current_node
 

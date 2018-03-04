@@ -26,6 +26,14 @@ class LinkedListTest(unittest.TestCase):
             linked_list.head.data,
             data)
 
+    def test_head_of_linked_list(self):
+        data = 'tacos'
+        linked_list = self.create_linked_list(data)
+        self.assertTrue(
+            linked_list.head.data == data
+        )
+
+
     def test_append_mult_to_linked_list(self):
         head_data = 'tacos'
         tail_data = 'burritos'
@@ -35,6 +43,17 @@ class LinkedListTest(unittest.TestCase):
         self.assertEqual(
             tail.data,
             tail_data)
+
+    def test_tail_of_linked_list(self):
+        head_data = 'tacos'
+        tail_data = 'burritos'
+        linked_list = self.create_linked_list(head_data, tail_data)
+        tail = linked_list.head.next
+
+        self.assertTrue(
+            linked_list.tail.data == tail_data
+        )
+
 
     def test_get_node(self):
         head_data = 'tacos'
@@ -124,5 +143,9 @@ class LinkedListTest(unittest.TestCase):
                 node.data in [head_data, tail_data]
             )
 
+    # TODO
+    # def test_tail_after_del_tail
+    # def test_tail_after_insert_after
+    # def test_delete_two_same_data_nodes
 if __name__ == '__main__':
     unittest.main()
