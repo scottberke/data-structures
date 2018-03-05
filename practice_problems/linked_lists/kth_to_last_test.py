@@ -1,7 +1,6 @@
 import unittest
 from kth_to_last import *
 
-
 class KthToLastTest(unittest.TestCase):
     # Helpers
     def create_linked_list(*data):
@@ -19,7 +18,6 @@ class KthToLastTest(unittest.TestCase):
         node_data = "tacos cheese burrito tequila picante salsa".split()
         linked_list = self.create_linked_list(node_data)
         kth = find_kth(linked_list, 2)
-
 
         self.assertTrue(
             kth == 'picante'
