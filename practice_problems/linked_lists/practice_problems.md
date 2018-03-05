@@ -8,7 +8,7 @@ Solution: [Remove Dups](./remove_dups.py)
 
 
 ## Find Kth to last
-Q) Implement an algorithm to find the kth to last element of a singly linked list.
+Q) Implement an algorithm to find the Kth to last element of a singly linked list.
 
 [Test Cases](./kth_to_last_test.py)
-Solution: [Remove Dups](./kth_to_last.py)
+Solution: [Find Kth To Last](./kth_to_last.py)

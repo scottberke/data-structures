@@ -17,3 +17,4 @@ Primitive data types are data types provided as a basic building block in a lang
 ## Basic Composite Data types
 - [Arrays](./basic_composites/array.md)
 - [Linked Lists](./basic_composites/linked_lists/linked_list.md)
+- [Stacks](./basic_composites/stacks/stack.md)
