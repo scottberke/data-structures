@@ -21,6 +21,8 @@ Trees come in a variety of flavors:
 ## Implementation
 [Binary Tree - Python](./tree.py)
 [Binary Tree Test Cases - Python](./tree_test.py)
+[Binary Search Tree - Python](./binary_search_tree.py)
+[Binary Search Tree Test Cases - Python](./binary_search_tree_test.py)
 
 ## Types of Trees
 ### Binary Trees
@@ -73,3 +75,7 @@ log(2) + 1  =
 x = 1
 1 + 1 = 2 <- min height is 2 when there's 2 leaves
 ```
+
+
+### Binary Search Trees
+A Binary Search Tree is a ordered or sorted binary tree. These trees enable fast lookup and binary search. Typically, binary search trees will be sorted such that subtrees left of the root node are nodes with values less than the root and subtrees right of the root node are greater in value than the root node.
