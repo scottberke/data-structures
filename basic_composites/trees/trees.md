@@ -85,6 +85,9 @@ A Binary Search Tree is a ordered or sorted binary tree. These trees enable fast
 
 Search and insertion into a BST is O(h) where h is the height of the BST.
 
+### Binary Heap
+TODO
+
 ### Red Black Trees
 TODO
 
