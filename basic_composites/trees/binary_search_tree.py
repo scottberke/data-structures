@@ -1,8 +1,4 @@
-class Node():
-    def __init__(self, data=None, left=None, right=None):
-        self.data = data
-        self.left = left
-        self.right = right
+from tree import *
 
 class BinarySearchTree():
     def __init__(self, root=None):
@@ -43,7 +39,7 @@ class BinarySearchTree():
             if current_node.right:
                 return self.find_node(current_node.right, data)
             else:
-                return False                         
+                return False
 
 
     @property

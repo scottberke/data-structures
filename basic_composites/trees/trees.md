@@ -6,10 +6,9 @@ Trees can be defined recursively where each node is comprised of a value and a l
 
 Trees are often used when data fits into a natural hierarchy. An example of this might be a file system or directory structure. Trees often make information easy to search when they are ordered.
 
-Trees come in a variety of flavors:
-- Binary Trees: A tree where each node has up to two children
-- Binary Search Trees: A binary tree where every nodes is specifically ordered
-- Balanced Trees: A tree where left and right subtrees differ in heigh by at most one
+### Types Of Trees
+- [Binary Tree](#binary-trees)
+- [Binary Search Tree](#binary-search-trees)
 
 ### Additional Terms Related To Trees
 - Branch: Node with at least one child
@@ -24,7 +23,6 @@ Trees come in a variety of flavors:
 [Binary Search Tree - Python](./binary_search_tree.py)
 [Binary Search Tree Test Cases - Python](./binary_search_tree_test.py)
 
-## Types of Trees
 ### Binary Trees
 Binary Trees allow for each node to have up to two children.
 #### Subtypes
@@ -32,6 +30,10 @@ Binary Trees allow for each node to have up to two children.
 - Complete Binary Tree: Every level is totally filled. Last level and furthest right can be empty as an exception
 - Perfect Binary Tree: Every node has two children and all leaves are the same level
 - Balanced Binary Tree: A tree with the minimum possible depth for the leaf nodes
+
+#### Tree Traversal
+- [Traversal - Python](./binary_tree_traversal.py)
+- [Traversal Test Cases - Python](./binary_tree_traversal_test.py)
 
 #### Properties
 - The maximum number of nodes at the nth level of the tree is **2^(n - 1)**

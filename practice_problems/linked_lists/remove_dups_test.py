@@ -25,9 +25,7 @@ class RemoveDupsTest(unittest.TestCase):
 
         dedupped = remove_dups(linked_list)
 
-        dedupped_data = []
-        for item in dedupped.items():
-            dedupped_data.append(item.data)
+        dedupped_data = [ item.data for item in dedupped.items() ]
 
         self.assertEqual(
             dedupped_data, node_data
@@ -38,11 +36,9 @@ class RemoveDupsTest(unittest.TestCase):
         linked_list = self.create_linked_list(node_data)
 
         dedupped = remove_dups(linked_list)
+        dedupped_data = [ item.data for item in dedupped.items() ]
 
         expected = "tacos cheese burrito tequila picante".split()
-        dedupped_data = []
-        for item in dedupped.items():
-            dedupped_data.append(item.data)
 
         self.assertEqual(
             dedupped_data, expected
@@ -53,11 +49,9 @@ class RemoveDupsTest(unittest.TestCase):
         linked_list = self.create_linked_list(node_data)
 
         dedupped = remove_dups(linked_list)
-        
+        dedupped_data = [ item.data for item in dedupped.items() ]
+
         expected = "tacos cheese burrito tequila picante".split()
-        dedupped_data = []
-        for item in dedupped.items():
-            dedupped_data.append(item.data)
 
         self.assertEqual(
             dedupped_data, expected
