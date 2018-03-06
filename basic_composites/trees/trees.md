@@ -16,6 +16,7 @@ Trees are often used when data fits into a natural hierarchy. An example of this
 - Path: A sequence of nodes and edges connecting nodes to descendants
 - Tree Height: How many levels up to the root node
 - Depth: Number of edges from root to the node in question
+- Height: Number of edges between the root and the leafs
 
 ## Implementation
 [Binary Tree - Python](./tree.py)
@@ -81,3 +82,11 @@ x = 1
 
 ### Binary Search Trees
 A Binary Search Tree is a ordered or sorted binary tree. These trees enable fast lookup and binary search. Typically, binary search trees will be sorted such that subtrees left of the root node are nodes with values less than the root and subtrees right of the root node are greater in value than the root node.
+
+Search and insertion into a BST is O(h) where h is the height of the BST.
+
+### Red Black Trees
+TODO
+
+### AVL Trees
+TODO

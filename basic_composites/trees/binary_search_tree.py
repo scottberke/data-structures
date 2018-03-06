@@ -41,6 +41,9 @@ class BinarySearchTree():
             else:
                 return False
 
+# TODO
+# Deletion
+# Verification
 
     @property
     def root(self):
