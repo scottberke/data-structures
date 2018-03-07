@@ -1,14 +1,18 @@
-import pdb
+
 class Node():
-    def __init__(self, data=None):
+    def __init__(self, data=None, edges=None):
         self.data = data
-        self.edges = []
+        if not edges:
+            self.edges = []
+        else:
+            self.edges = edges
 
     def add_edge(self, node):
         self.edges.append(node)
 
     def __str__(self):
         edges = [ edge.data for edge in self.edges ]
+
         return str({ self.data: edges })
 
 
@@ -24,6 +28,7 @@ class Graph():
 
     def __str__(self):
         graph = {}
+
         for node in self.nodes:
             graph[node.data] = node.edges
 
