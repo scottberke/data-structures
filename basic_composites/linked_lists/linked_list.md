@@ -28,5 +28,5 @@ The 'head' of a linked list is the first node.
 
 
 ## Practice Problems
-[Remove Dups](./practice_problems.md#remove-dups)
-[Find Kth To Last Node](./practice_problems.md#find-kth-to-last)
+[Remove Dups](../../practice_problems/linked_lists/practice_problems.md#remove-dups)
+[Find Kth To Last Node](../../practice_problems/linked_lists/practice_problems.md#find-kth-to-last)

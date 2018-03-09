@@ -20,3 +20,4 @@ Primitive data types are data types provided as a basic building block in a lang
 
 ## Trees and Graphs
 - [Trees](./basic_composites/trees/trees.md)
+- [Graphs](./basic_composites/graphs/graphs.md)
