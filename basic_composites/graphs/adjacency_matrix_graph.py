@@ -9,6 +9,7 @@ class AdjacencyMatrix():
         if src >= self.nodes or dest >= self.nodes:
             raise AttributeError("Edge beyond matrix size")
 
+        weight = None if weight == 0 else weight
         self.matrix[src][dest] = weight
 
     def __str__(self):
