@@ -22,6 +22,27 @@ class GraphTest(unittest.TestCase):
             node in graph.nodes
         )
 
+    def test_fetch_node(self):
+        graph = Graph()
+        node = Node(0)
+        graph.add_node(node)
+
+        self.assertEqual(
+            graph.fetch_node(node),
+            node
+        )
+
+    def test_fetch_node_not_in_graph(self):
+        graph = Graph()
+        node = Node(0)
+        with self.assertRaises(ValueError) as error:
+            graph.fetch_node(node)
+
+        self.assertEqual(
+            str(error.exception),
+            "Node not in graph"
+        )
+
     def test_add_edge(self):
         # Create graph and nodes
         graph = Graph()
@@ -35,6 +56,32 @@ class GraphTest(unittest.TestCase):
         # Second node should be in first nodes edges
         self.assertTrue(
             second_node in first_node.edges
+        )
+
+    def test_add_edge_w_src_node_not_in_graph(self):
+        graph = Graph()
+        src_node = Node(0)
+        dest_node = Node(1)
+        graph.add_node(dest_node)
+        with self.assertRaises(ValueError) as error:
+            graph.add_edge(src_node, dest_node)
+
+        self.assertEqual(
+            str(error.exception),
+            "Node not in graph"
+        )
+
+    def test_add_edge_w_dest_node_not_in_graph(self):
+        graph = Graph()
+        src_node = Node(0)
+        dest_node = Node(1)
+        graph.add_node(src_node)
+        with self.assertRaises(ValueError) as error:
+            graph.add_edge(src_node, dest_node)
+
+        self.assertEqual(
+            str(error.exception),
+            "Node not in graph"
         )
 
     def test_print_graph(self):

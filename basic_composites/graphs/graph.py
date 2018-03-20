@@ -1,6 +1,12 @@
-
 class Node():
     def __init__(self, data=None, edges=None):
+        """
+        Input:
+            data (Object) = Data representing the value/name of the node
+            edges (Node)  = Node to be added as edge to self
+        Output:
+            Node
+        """
         self.data = data
         if not edges:
             self.edges = []
@@ -8,6 +14,12 @@ class Node():
             self.edges = edges
 
     def add_edge(self, node):
+        """
+        Input:
+            node (Node) = Node to be added as edge to self
+        Output:
+            True if success
+        """
         self.edges.append(node)
         return True
 
@@ -19,14 +31,33 @@ class Node():
 
 class Graph():
     def __init__(self, nodes=[]):
+        """
+        Input:
+            nodes [Nodes] = Array containing nodes in self
+        Output:
+            Graph
+        """
         self.nodes = nodes
 
     def add_node(self, node):
+        """
+        Input:
+            node (Node) = Node to be added to self
+        Output:
+            True if success
+        """
         self.nodes.append(node)
         return True
 
     def add_edge(self, src, dest):
-        src.add_edge(dest)
+        """
+        Input:
+            src (Node) = Source node in self
+            dest (Node) = Destination node in self
+        Output:
+            True if node edge is succesfully added
+            Raises ValueError if either node not in graph
+        """
         try:
             src = self.fetch_node(src)
             dest = self.fetch_node(dest)
@@ -35,6 +66,15 @@ class Graph():
             raise ValueError("Node not in graph")
 
         return True
+
+    def fetch_node(self, node):
+        """
+        Input:
+            node (Node) = Node to find in self
+        Output:
+            Node if success
+            Raises ValueError if node not in self
+        """
         try:
             index = self.nodes.index(node)
             return self.nodes[index]
