@@ -4,17 +4,16 @@ class AdjacencyMatrix():
         Input:
             nodes (int) = Integer representing number of nodes for the matrix
         Output:
-            matrix ([int][int]) = Matrix represented as an integer arrary of integers
+            AdjacencyMatrix
         Ex:
-            AdjacencyMatrix(2) => [[None, None],[None, None]]
+            AdjacencyMatrix(2) => AdjacencyMatrix
         """
         if nodes <= 0:
             raise AttributeError("Graph must have at least one node")
         self.nodes = nodes
         self.matrix = [ [None] * nodes for i in range(nodes) ]
-        return self.matrix
 
-    def add_edge(self, src, dest, weight=0):
+    def add_edge(self, src, dest, weight=None):
         """
         Input:
             src (int) = Integer representing source node
@@ -27,7 +26,6 @@ class AdjacencyMatrix():
         if src >= self.nodes or dest >= self.nodes:
             raise AttributeError("Edge beyond matrix size")
 
-        weight = None if weight == 0 else weight
         self.matrix[src][dest] = weight
         return True
 
