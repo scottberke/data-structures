@@ -1,3 +1,8 @@
+"""
+An implementation of a binary search tree
+Author: Scott Berke
+"""
+
 from tree import *
 
 class BinarySearchTree():

@@ -1,3 +1,7 @@
+"""
+An implementation of a stack using a linked list
+Author: Scott Berke
+"""
 import sys
 sys.path.append('../../basic_composites/linked_lists')
 from linked_list import *

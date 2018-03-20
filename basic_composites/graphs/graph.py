@@ -1,3 +1,7 @@
+"""
+An implementation of a basic graph
+Author: Scott Berke
+"""
 class Node():
     def __init__(self, data=None, edges=None):
         """

@@ -1,3 +1,7 @@
+"""
+An implementation of in order, pre order and post order tree traversal
+Author: Scott Berke
+"""
 
 def in_order_traversal(node):
     if node:

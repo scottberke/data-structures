@@ -1,3 +1,7 @@
+"""
+An implementation of a stack using an array
+Author: Scott Berke
+"""
 class Stack(list):
     def __init__(self):
         pass
