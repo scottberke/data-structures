@@ -4,6 +4,7 @@
 Integers are typically represented by 4 bytes or 32 bits. Most of the time this memory allocation for an integer enables representation of negative and positive numbers.
 `-2^31 -> 2^31 - 1` is the range of numbers represented by a 4 byte signed integer. If you have an unsigned integer then you effectively double the number of positive values capable of being represented to `2^32`
 Other varieties of integers exists capable or storing larger number such as bigint.
+
 - - - -
 
 ## Floating Point Numbers
@@ -23,3 +24,8 @@ Booleans are the logical values of True and False.  Often times Booleans are rep
 
 ## Pointers
 Pointers are values that point to another objects address in memory. These are sometimes called references. They enable access to specific locations in memory where larger or other types of data are stored. Dereferencing is when you access the underlying data at a pointers location. Pointers are used in linked lists and in variety of other data structures to reference other data.
+
+
+## Practice Problems
+- [atoi - String To Integer - Python](../practice_problems/primitives/atoi.py)
+- [atoi - String To Integer Tests - Python](../practice_problems/primitives/atoi_test.py)
