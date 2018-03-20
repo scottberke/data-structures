@@ -66,6 +66,18 @@ class LinkedListTest(unittest.TestCase):
             head_data
         )
 
+    def test_get_node_tail(self):
+        head_data = 'tacos'
+        tail_data = 'burritos'
+        linked_list = self.create_linked_list(head_data, tail_data)
+
+        node = linked_list.get(tail_data)
+        self.assertEqual(
+            node.data,
+            tail_data
+        )
+
+
     def test_delete_node_middle(self):
         head_data = 'tacos'
         mid_data = 'whiskey'

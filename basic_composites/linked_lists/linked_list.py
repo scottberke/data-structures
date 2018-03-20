@@ -1,6 +1,12 @@
 import pdb
 class LinkedList:
     def __init__(self, head=None):
+        """
+        Input:
+            head (node) = Node that is the first element in the linked list
+         Output:
+            LinkedList
+        """
         self.head = head
         self.tail = None
 
@@ -15,10 +21,13 @@ class LinkedList:
             False = False is returned if value doesnt exist in the linked list
         """
         current_node = self.head
+        if current_node.data == data:
+            return current_node
+
         while current_node.next:
+            current_node = current_node.next
             if current_node.data == data:
                 return current_node
-            current_node = current_node.next
 
         return False
 
@@ -117,7 +126,7 @@ class LinkedList:
                 if not current_node.next:
                     raise ValueError("Node not in linked list")
                 else:
-                    current_node = current_node.next    
+                    current_node = current_node.next
         else:
             if current_node.data == data:
                 self.head = current_node.next
@@ -174,6 +183,12 @@ class LinkedList:
 
 class Node:
     def __init__(self, data):
+        """
+        Input:
+            data (Object) = Data to be stored in linked list
+        Output:
+            Node
+        """
         self.data = data
         self.next = None
 
