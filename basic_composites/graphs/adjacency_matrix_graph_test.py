@@ -64,6 +64,7 @@ class AdjacencyMatrixTest(unittest.TestCase):
         out = StringIO()
         with redirect_stdout(out):
             print(matrix)
+
         self.assertEqual(
             out.getvalue(),
             expected
