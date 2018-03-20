@@ -9,6 +9,7 @@ class Node():
 
     def add_edge(self, node):
         self.edges.append(node)
+        return True
 
     def __str__(self):
         edges = [ edge.data for edge in self.edges ]
@@ -22,9 +23,23 @@ class Graph():
 
     def add_node(self, node):
         self.nodes.append(node)
+        return True
 
     def add_edge(self, src, dest):
         src.add_edge(dest)
+        try:
+            src = self.fetch_node(src)
+            dest = self.fetch_node(dest)
+            src.add_edge(dest)
+        except ValueError:
+            raise ValueError("Node not in graph")
+
+        return True
+        try:
+            index = self.nodes.index(node)
+            return self.nodes[index]
+        except ValueError:
+            raise ValueError("Node not in graph")
 
     def __str__(self):
         graph = {}
