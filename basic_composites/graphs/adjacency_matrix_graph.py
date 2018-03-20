@@ -1,3 +1,7 @@
+"""
+An implementation of an adjacency matrix
+Author: Scott Berke
+"""
 class AdjacencyMatrix():
     def __init__(self, nodes):
         """

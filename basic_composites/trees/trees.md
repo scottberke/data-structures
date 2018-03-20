@@ -19,10 +19,10 @@ Trees are often used when data fits into a natural hierarchy. An example of this
 - Height: Number of edges between the root and the leafs
 
 ## Implementation
-[Binary Tree - Python](./tree.py)
-[Binary Tree Test Cases - Python](./tree_test.py)
-[Binary Search Tree - Python](./binary_search_tree.py)
-[Binary Search Tree Test Cases - Python](./binary_search_tree_test.py)
+- [Binary Tree - Python](./tree.py)
+- [Binary Tree Test Cases - Python](./tree_test.py)
+- [Binary Search Tree - Python](./binary_search_tree.py)
+- [Binary Search Tree Test Cases - Python](./binary_search_tree_test.py)
 
 ### Binary Trees
 Binary Trees allow for each node to have up to two children.
