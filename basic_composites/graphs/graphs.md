@@ -1,8 +1,11 @@
 # Graphs
 ## Description
-Graphs are similar to trees in that they contain a set of nodes or vertices. Graphs can either be **directed** or **undirected**. Directed graphs can be thought of as having vertices that are connected by one-way streets while undirected graphs would have two-way streets. A pair of two vertices `(i, j)` is called an edge. The preceding edge can be thought of as an edge existing between node `i` and node `j`.
+Graphs are similar to trees in that they contain a set of nodes or vertices. Graphs can either be **directed** or **undirected**. Directed graphs can be thought of as having vertices that are connected by one-way streets while undirected graphs would have two-way streets.
+
+A pair of two vertices `(i, j)` is called an edge. The preceding edge can be thought of as an edge existing between node `i` and node `j`.
 
 If a path exists between each pair of nodes then the graph would be considered connected. A connected graph means that there are no unreachable nodes in the graph.
+
 A cyclic graph is a graph that has a cycle, meaning that a number of nodes create a chain that can be cycled through. A graph must have at least one cycle to be considered a cyclical graph.
 
 A common representation of a graph is that of an Adjacency Matrix. An adjacency matrix is a 2D array consisting of nodes in the graph and the weights between each node. For example:
