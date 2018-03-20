@@ -18,11 +18,11 @@ A common representation of a graph is that of an Adjacency Matrix. An adjacency 
 ### Additional Terms Related To Graphs
 
 ## Implementation
-[Graph - Python](./graph.py)
-[Graph Test Cases - Python](./graph_test.py)
-[Adjacency Matrix - Python](./adjacency_matrix_graph.py)
-[Adjacency Matrix Test Cases - Python](./adjacency_matrix_graph_test.py)
+- [Graph - Python](./graph.py)
+- [Graph Test Cases - Python](./graph_test.py)
+- [Adjacency Matrix - Python](./adjacency_matrix_graph.py)
+- [Adjacency Matrix Test Cases - Python](./adjacency_matrix_graph_test.py)
 
 
 ## Practice Problems
-[Route Between Nodes](../../practice_problems/graphs/practice_problems.md#route-between-nodes)
+- [Route Between Nodes](../../practice_problems/graphs/practice_problems.md#route-between-nodes)
