@@ -2,7 +2,7 @@
 An implementation of a linked list
 Author: Scott Berke
 """
-import pdb
+
 class LinkedList:
     def __init__(self, head=None):
         """
