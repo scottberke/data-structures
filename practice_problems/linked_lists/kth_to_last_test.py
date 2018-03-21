@@ -8,9 +8,6 @@ class KthToLastTest(unittest.TestCase):
         if type(data[1]) is list:
             for value in data[1]:
                 linked_list.append(value)
-        else:
-            for value in data[1:]:
-                linked_list.append(value)
         return linked_list
 
     # Tests
