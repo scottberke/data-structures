@@ -24,32 +24,3 @@ def remove_dups(linked_list):
         prev_node.next = None
 
     return linked_list
-
-# First Implementation: Uses extra space so not as efficient as it should be
-# def remove_dups(linked_list):
-#     # Set to hold data
-#     ref_node_data = set()
-#     # Empty linked list
-#     dedupped = LinkedList()
-#     # Start node
-#     current_node = linked_list.head
-#     # Iterate until the end
-#     while current_node.next:
-#         # Unique node found
-#         if current_node.data not in ref_node_data:
-#             # Add to reference set
-#             ref_node_data.add(current_node.data)
-#             # Update head
-#             linked_list.head = current_node.next
-#             # Add to dedupped linked list
-#             dedupped.append(current_node)
-#             # Clear current nodes next
-#             current_node.next = None
-#             # New current node
-#             current_node = linked_list.head
-#         else:
-#             # Update current node
-#             current_node = current_node.next
-#     # Add last node to dedupped
-#     if current_node.data not in ref_node_data: dedupped.append(current_node)
-#     return dedupped
