@@ -10,6 +10,11 @@ This process changes when you have dynamic arrays. In languages like C, you need
 
 Multi-dimensional arrays, or arrays of arrays, can be used to represent graphs and matrices.
 
+A **string is an array of characters**.
+
+## Practice Problems
+- [Check Permutations](../practice_problems/misc/practice_problems.md#check-permutations)
+
 ## Common Operations:
 ### Python
 
