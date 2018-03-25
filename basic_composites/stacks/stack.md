@@ -24,3 +24,7 @@ Both `push` and `pop` operations are O(1).
 - [Stack With Array Test Cases - Python](./stack_array_test.py)
 - [Stack With Linked List - Python](./stack_linked_list.py)
 - [Stack With Linked List Test Cases - Python](./stack_linked_list_test.py)
+
+
+## Practice Problems
+- [Sort Stack](../../practice_problems/stacks/practice_problems.md#sort-stack)
