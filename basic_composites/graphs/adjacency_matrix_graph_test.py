@@ -22,7 +22,7 @@ class AdjacencyMatrixTest(unittest.TestCase):
             matrix, AdjacencyMatrix
         )
         self.assertTrue(
-            matrix.nodes == num_nodes
+            matrix.size == num_nodes
         )
 
     def test_create_graph_invalid_nodes(self):
@@ -34,15 +34,14 @@ class AdjacencyMatrixTest(unittest.TestCase):
             "Graph must have at least one node"
         )
 
-    def test_add_edge(self):
+    def test_add_node(self):
         matrix = AdjacencyMatrix(5)
         nodes = self.matrix_helper()
-        node = nodes[0] # [0, 1, 2, 1, 2]
-        for index, weight in enumerate(node):
-            matrix.add_edge(0, index, weight)
+        node = Node(0, nodes[0]) # [0, 1, 2, 1, 2]
+        matrix.add_node(node)
 
         self.assertEqual(
-            matrix.matrix[0],
+            matrix.get_node(0),
             node
         )
 
@@ -50,9 +49,7 @@ class AdjacencyMatrixTest(unittest.TestCase):
         # Create matrix and add edges
         matrix = AdjacencyMatrix(5)
         nodes = self.matrix_helper()
-        for n_index, node in enumerate(nodes):
-            for e_index, edge in enumerate(node):
-                matrix.add_edge(n_index, e_index, nodes[n_index][e_index])
+        matrix.add_nodes_from_array(nodes)
 
         # Build expected out
         expected = ""
