@@ -27,5 +27,4 @@ Pointers are values that point to another objects address in memory. These are s
 
 
 ## Practice Problems
-- [atoi - String To Integer - Python](../practice_problems/primitives/atoi.py)
-- [atoi - String To Integer Tests - Python](../practice_problems/primitives/atoi_test.py)
+- [atoi - String To Integer](../practice_problems/primitives/practice_problems.md#atoi))

@@ -26,10 +26,9 @@ etc
 - One binary digit == one bit
 
 #### Practice Problems
-- [Int To Binary](../practice_problems/primitives/int_to_binary.py)
-- [Int To Binary Test Cases](../practice_problems/primitives/int_to_binary_test.py)
-- [Binary To Int](../practice_problems/primitives/binary_to_int.py)
-- [Binary To Int Test Cases](../practice_problems/primitives/binary_to_int_test.py)
+- [Int To Binary](../practice_problems/primitives/practice_problems.md#int-to-binary)
+- [Binary To Int](../practice_problems/primitives/practice_problems.md#binary-to-int)
+
 
 
 ### Bits and Bytes
