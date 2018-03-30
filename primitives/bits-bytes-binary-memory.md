@@ -26,8 +26,11 @@ etc
 - One binary digit == one bit
 
 #### Practice Problems
-- [Int to Bit Test Cases](../practice_problems/primitives/int_to_binary.py)
-- [Int to Bit Test Cases](../practice_problems/primitives/int_to_binary_test.py)
+- [Int To Binary](../practice_problems/primitives/int_to_binary.py)
+- [Int To Binary Test Cases](../practice_problems/primitives/int_to_binary_test.py)
+- [Binary To Int](../practice_problems/primitives/binary_to_int.py)
+- [Binary To Int Test Cases](../practice_problems/primitives/binary_to_int_test.py)
+
 
 ### Bits and Bytes
 Inside of a computer exists really only transistors. These have the ability to be switched on or off. Switched off, or the absence of electricity, represents a 0 while switched on, or presence of electricity, represents a 1. This provides the ability to count in binary.
