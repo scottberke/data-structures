@@ -12,6 +12,8 @@ Primitive data types are data types provided as a basic building block in a lang
 - [Booleans](./primitives/primitives.md#booleans)
 - [Pointers](./primitives/primitives.md#pointers)
 
+
+
 ## Basic Composite Data types
 - [Arrays](./basic_composites/array.md)
 - [Linked Lists](./basic_composites/linked_lists/linked_list.md)
@@ -21,4 +23,5 @@ Primitive data types are data types provided as a basic building block in a lang
 
 ## Trees and Graphs
 - [Trees](./basic_composites/trees/trees.md)
+- [Heaps](./basic_composites/trees/trees.md#binary-heap)
 - [Graphs](./basic_composites/graphs/graphs.md)
