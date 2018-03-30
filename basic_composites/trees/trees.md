@@ -9,6 +9,7 @@ Trees are often used when data fits into a natural hierarchy. An example of this
 ### Types Of Trees
 - [Binary Tree](#binary-trees)
 - [Binary Search Tree](#binary-search-trees)
+- [Binary Heap](#binary-heap)
 
 ### Additional Terms Related To Trees
 - Branch: Node with at least one child
@@ -23,6 +24,8 @@ Trees are often used when data fits into a natural hierarchy. An example of this
 - [Binary Tree Test Cases - Python](./tree_test.py)
 - [Binary Search Tree - Python](./binary_search_tree.py)
 - [Binary Search Tree Test Cases - Python](./binary_search_tree_test.py)
+- [Binary Min Heap](./binary_min_heap.py)
+- [Binary Min Heap Test Cases](./binary_min_heap.py)
 
 ### Binary Trees
 Binary Trees allow for each node to have up to two children.
@@ -86,7 +89,16 @@ A Binary Search Tree is a ordered or sorted binary tree. These trees enable fast
 Search and insertion into a BST is O(h) where h is the height of the BST.
 
 ### Binary Heap
-TODO
+A Binary Heap is a specific type of Binary Tree that is not sorted however, it does conform to a particular order. Binary heaps are complete in that all levels, except for the last level, are full. They can either be **min heaps** or **max heaps**. A min heap has the lowest value in the tree at the root while the max heap has the largest possible value at the root of the tree. A heap is commonly implemented as an array.
+
+A heap is an efficient example of a priority queue. Heaps are used in Dijkstra's algorithm.
+
+Items are inserted into a binary heap by adding them to the next open spot in the tree and then 'bubbling up' to the correct position depending on whether the heap is a min or max heap. The element moves upward, swapping with parent nodes that are in violation of the heap property.
+
+Removing from binary heaps usually takes place at the root since thats typically the node of interest or highest/smallest priority. Removing the root is called polling. To perform polling, we take the root node and swap with the last element in the tree. After the swap, we 'bubble down' by swapping the new root with the next smallest value of the children. When the children nodes are equal, we default to the left node.
+
+Removing a non-root node requires we first find the non-root node. We then swap the found non-root node with the last element in the tree, then remove the last node. We then 'bubble up' to place the swapped node belongs.
+
 
 ### Red Black Trees
 TODO
