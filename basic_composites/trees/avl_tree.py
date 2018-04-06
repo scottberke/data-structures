@@ -197,3 +197,5 @@ class AVLTree():
         self.update(node_right)
         # Return new root
         return node_right
+
+    # TODO: Delete from AVL

@@ -2,7 +2,7 @@
 ## Description
 Graphs are similar to trees in that they contain a set of nodes or vertices. Graphs can either be **directed** or **undirected**. Directed graphs can be thought of as having vertices that are connected by one-way streets while undirected graphs would have two-way streets.
 
-A pair of two vertices `(i, j)` is called an edge. The preceding edge can be thought of as an edge existing between node `i` and node `j`.
+A pair of two vertices `(i, j)` is called an edge. The preceding edge can be thought of as an edge existing between node `i` and node `j`. The **degree** of a vertex or node is is the number of edges connected to the vertex. A graph is considered **weighted** if edges in the graph have values representing a weight or cost/time between the vertices. A graph is colored when colors are assigned to the vertices in the graph where no adjacent vertices have the same color.
 
 If a path exists between each pair of nodes then the graph would be considered connected. A connected graph means that there are no unreachable nodes in the graph.
 
