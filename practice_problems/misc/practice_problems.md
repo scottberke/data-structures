@@ -12,3 +12,12 @@ Q) There are three types of edits that can be performed on strings: insert a cha
 
 - Test Case: [One Away](./one_away_test.py)
 - Solution: [One Away](./one_away.py)
+
+
+## Reverse Message Strings
+Q) Your team is scrambling to decipher a recent message, worried it's a plot to break into a major European National Cake Vault. The message has been mostly deciphered, but all the words are backwards! Your colleagues have handed off the last step to you.
+
+Write a function reverse_words() that takes a message as a list of characters and reverses the order of the words in-place.
+
+- Test Case: [Reverse Message Strings](./reverse_message_strings_test.py)
+- Solution: [Reverse Message Strings](./reverse_message_strings.py)
