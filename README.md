@@ -12,6 +12,10 @@ Primitive data types are data types provided as a basic building block in a lang
 - [Booleans](./primitives/primitives.md#booleans)
 - [Pointers](./primitives/primitives.md#pointers)
 
+### Practice Problems
+- [Int To Binary](./practice_problems/primitives/practice_problems.md#int-to-binary)
+- [Binary To Int](./practice_problems/primitives/practice_problems.md#binary-to-int)
+- [ATOI](./practice_problems/primitives/practice_problems.md#atoi)
 
 ## Basic Composite Data types
 - [Arrays](./basic_composites/array.md)
@@ -19,8 +23,24 @@ Primitive data types are data types provided as a basic building block in a lang
 - [Stacks](./basic_composites/stacks/stack.md)
 - [Queues](./basic_composites/queues/queues.md)
 
+### Practice Problems
+#### Linked Lists
+- [Remove Dups](./practice_problems/linked_lists/practice_problems.md#remove_dups)
+- [Find Kth To Last](./practice_problems/linked_lists/practice_problems.md#find-kth-to-last)
+- [Reverse A Linked List](./practice_problems/linked_lists/practice_problems.md#reverse-a-linked-list)
+
+#### Stacks
+- [Sort Stack](./practice_problems/stacks/practice_problems.md#sort-stack)
+
+#### Misc
+- [Check Permutations](./practice_problems/misc/practice_problems.md#check-permutations)
+- [One Away](./practice_problems/misc/practice_problems.md#one-away)
+- [Reverse Message Strings](./practice_problems/misc/practice_problems.md#reverse-message-strings)
 
 ## Trees and Graphs
 - [Trees](./basic_composites/trees/trees.md)
 - [Heaps](./basic_composites/trees/trees.md#binary-heap)
 - [Graphs](./basic_composites/graphs/graphs.md)
+
+### Practice Problems
+- [Route Between Nodes](./practice_problems/graphs/practice_problems.md#route-between-nodes)
