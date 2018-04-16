@@ -98,13 +98,13 @@ These trees maintain a balanced state by using 'tree rotations'. A tree rotation
 
 
 ### Binary Heap
-A Binary Heap is a specific type of Binary Tree that is not sorted however, it does conform to a particular order. Binary heaps are complete in that all levels, except for the last level, are full. They can either be **min heaps** or **max heaps**. A min heap has the lowest value in the tree at the root while the max heap has the largest possible value at the root of the tree. A heap is commonly implemented as an array.
+A Binary Heap is a specific type of Binary Tree that is not sorted however, it does conform to a particular order. Binary heaps are complete in that all levels, except for the last level, are full. They can either be **min heaps** or **max heaps**. A min heap has the lowest value in the tree at the root while the max heap has the largest possible value at the root of the tree. A heap is commonly implemented as an array. Children of a node/index in a heap are located at **(2*index + 1) and (2*index + 2)**.
 
 A heap is an efficient example of a priority queue. Heaps are used in Dijkstra's algorithm.
 
-Items are inserted into a binary heap by adding them to the next open spot in the tree and then 'bubbling up' to the correct position depending on whether the heap is a min or max heap. The element moves upward, swapping with parent nodes that are in violation of the heap property.
+Items are inserted into a binary heap by adding them to the next open spot in the tree and then **'bubbling up'** to the correct position depending on whether the heap is a min or max heap. The element moves upward, swapping with parent nodes that are in violation of the heap property.
 
-Removing from binary heaps usually takes place at the root since thats typically the node of interest or highest/smallest priority. Removing the root is called polling. To perform polling, we take the root node and swap with the last element in the tree. After the swap, we 'bubble down' by swapping the new root with the next smallest value of the children. When the children nodes are equal, we default to the left node.
+Removing from binary heaps usually takes place at the root since thats typically the node of interest or highest/smallest priority. Removing the root is called **polling**. To perform polling, we take the root node and swap with the last element in the tree. After the swap, we **'bubble down'** by swapping the new root with the next smallest value of the children. When the children nodes are equal, we default to the left node.
 
 Removing a non-root node requires we first find the non-root node. We then swap the found non-root node with the last element in the tree, then remove the last node. We then 'bubble up' to place the swapped node belongs.
 
