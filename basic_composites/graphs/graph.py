@@ -37,7 +37,7 @@ class Graph():
     def __init__(self, nodes=[]):
         """
         Input:
-            nodes [Nodes] = Array containing nodes in self
+            nodes [(nodes)] = Array containing nodes in self
         Output:
             Graph
         """
@@ -56,8 +56,8 @@ class Graph():
     def add_edge(self, src, dest):
         """
         Input:
-            src (Node) = Source node in self
-            dest (Node) = Destination node in self
+            src (node) = Source node in self
+            dest (node) = Destination node in self
         Output:
             True if node edge is succesfully added
             Raises ValueError if either node not in graph
@@ -74,7 +74,7 @@ class Graph():
     def fetch_node(self, node):
         """
         Input:
-            node (Node) = Node to find in self
+            node (node) = Node to find in self
         Output:
             Node if success
             Raises ValueError if node not in self

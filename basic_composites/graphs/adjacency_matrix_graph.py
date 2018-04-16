@@ -21,7 +21,7 @@ class AdjacencyMatrix():
         if size <= 0:
             raise AttributeError("Graph must have at least one node")
         self.size = size
-        self.matrix = [ [None] * size for i in range(size) ]
+        self.matrix = [ [None] * size for _ in range(size) ]
         self.nodes = {}
 
     def add_nodes_from_array(self, nodes):
