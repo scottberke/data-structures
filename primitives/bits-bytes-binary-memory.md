@@ -1,7 +1,7 @@
 ## Binary, Bits, Bytes and Memory
 ### Binary
 #### Description:
-The number system that we commonly use is base 10. We have digits 0-9 and when we reach 9 we roll over or carry the a one to the tens place. `10` represents 1 ‘ten’ and zero ‘ones’.  Computers only understand ones and zeros thus the number system understood by computers is base two using 0 and 1. When you reach 1 and want to increment the count to represent 2, you roll over or carry a one to the ‘twos place’. `10`  in binary represents 2 -> you have 1 ‘two’ and zero ‘ones’.
+The number system that we commonly use is base 10. We have digits 0-9 and when we reach 9 we roll over or carry a one to the tens place. `10` represents 1 ‘ten’ and zero ‘ones’.  Computers only understand ones and zeros thus the number system understood by computers is base two using 0 and 1. When you reach 1 and want to increment the count to represent 2, you roll over or carry a one to the ‘twos place’. `10`  in binary represents 2 -> you have 1 ‘two’ and zero ‘ones’.
 ```
 Base 10:
 10^0 => 1
