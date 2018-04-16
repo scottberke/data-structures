@@ -1,3 +1,4 @@
+# TODO: Bubble up and down with starting index as apposed to defaulting to end/root
 class MaxHeap(list):
     def __init__(self):
         pass
@@ -68,11 +69,12 @@ class MaxHeap(list):
         Input:
         Output:
         """
-
         node_index = len(self) - 1
-        while self[node_index] > self[node_index - 1] and node_index > 0:
-            self[node_index], self[node_index - 1] =  self[node_index - 1], self[node_index]
+        parent_index = (node_index - 1) // 2
+        while self[node_index] > self[parent_index] and node_index > 0:
+            self[node_index], self[parent_index] =  self[parent_index], self[node_index]
             node_index -= 1
+            parent_index = (node_index - 1) // 2
 
     def bubble_down(self):
         """
@@ -158,6 +160,3 @@ class MaxHeap(list):
             return super().__getitem__(key)
         except IndexError:
             return None
-
-
-            

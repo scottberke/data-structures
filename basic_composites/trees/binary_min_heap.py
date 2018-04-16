@@ -1,3 +1,4 @@
+# TODO: Bubble up and down with starting index as apposed to defaulting to end/root
 class MinHeap(list):
     def __init__(self):
         pass
@@ -52,8 +53,8 @@ class MinHeap(list):
         """
         children = []
         # Children of node @ 2*node_index + 1 and 2*node_index + 2
-        for i in range(1,3):
-            child_index = (2*node_index) + i
+        for i in [1, 2]:
+            child_index = (2 * node_index) + i
             if child_index < len(self):
                 children.append(child_index)
         return children
@@ -67,11 +68,12 @@ class MinHeap(list):
         Input:
         Output:
         """
-
         node_index = len(self) - 1
-        while self[node_index] < self[node_index - 1] and node_index > 0:
-            self[node_index], self[node_index - 1] =  self[node_index - 1], self[node_index]
+        parent_index = (node_index - 1)//2
+        while self[node_index] < self[parent_index] and node_index > 0:
+            self[node_index], self[parent_index] =  self[parent_index], self[node_index]
             node_index -= 1
+            parent_index = (node_index - 1)//2
 
     def bubble_down(self):
         """
