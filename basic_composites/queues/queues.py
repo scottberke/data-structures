@@ -1,3 +1,5 @@
+# TODO: More efficient implementation with double linked list
+# enqueue() takes O(n) in this implementation since its using a list
 class Queue(list):
     def __init__(self):
         pass
@@ -12,4 +14,4 @@ class Queue(list):
         return not self
 
     def peek(self):
-        return self[-1]    
+        return self[-1]
