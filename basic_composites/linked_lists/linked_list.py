@@ -12,15 +12,15 @@ class LinkedList:
             LinkedList
         """
         self.head = head
-        self.tail = None
+        self.tail = head
 
     def get(self, data):
         """
         O(n)
         Input:
-            data = Value to search for in the linked list
+            data (object) = Value to search for in the linked list
         Output:
-            Node = Node containing the data value if the value is in the
+            (node) = Node containing the data value if the value is in the
                         linked list
             False = False is returned if value doesnt exist in the linked list
         """
@@ -41,9 +41,9 @@ class LinkedList:
         """
         O(n) or O(1) if keeping track of tail
         Input:
-            data = Value to append to the end of the linked list
+            data (object) = Value to append to the end of the linked list
         Output:
-            Node = new node that was appended to the linked list
+            (node) = new node that was appended to the linked list
         """
         new_node = self.handle_data(data)
 
@@ -55,6 +55,8 @@ class LinkedList:
                 current_node = current_node.next
             current_node.next = new_node
 
+        # Tail append in O(1):
+        # self.tail.next = new_node
         self.tail = new_node
 
         return new_node
@@ -65,13 +67,14 @@ class LinkedList:
         """
         O(1)
         Input:
-            data = Value to add to the start of the linked list
+            data (object) = Value to add to the start of the linked list
         Output:
-            Node = new node that was appended to the linked list
+            (node) = new node that was appended to the linked list
         """
         new_node = self.handle_data(data)
         if not self.head:
             self.head = new_node
+            self.tail = new_node
         else:
             new_node.next = self.head
             self.head = new_node
@@ -84,10 +87,10 @@ class LinkedList:
         """
         O(n)
         Input:
-            after_node = data value of node to insert after
-            data = Value to add to the start of the linked list
+            after_node (object) = data value of node to insert after
+            data (object) = Value to add to the start of the linked list
         Output:
-            node = new node just inserted
+            (node) = new node just inserted
         """
         if not after_node or not data:
             raise ValueError("After node and data are required")
@@ -116,31 +119,24 @@ class LinkedList:
         """
         O(n)
         Input:
-            data || Node = Node or value of node to delete from the linked list
+            data (object) = Node or value of node to delete from the linked list
         Output:
-            node = node that was just removed
+            (node) = node that was just removed
         """
-        current_node = self.head
         if type(data) == Node:
-            if current_node == data:
-                self.head = current_node.next
-                return current_node
+            data = data.data
 
-            while current_node.next != data:
-                if not current_node.next:
-                    raise ValueError("Node not in linked list")
-                else:
-                    current_node = current_node.next
-        else:
-            if current_node.data == data:
-                self.head = current_node.next
-                return current_node
+        current_node = self.head
 
-            while current_node.next.data != data:
-                if not current_node.next:
-                    raise ValueError("Node not in linked list")
-                else:
-                    current_node = current_node.next
+        if current_node.data == data:
+            self.head = current_node.next
+            return current_node
+
+        while current_node.next.data != data:
+            if not current_node.next:
+                raise ValueError("Node not in linked list")
+            else:
+                current_node = current_node.next
 
         current_node.next = current_node.next.next
 

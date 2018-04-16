@@ -15,7 +15,7 @@ The **'head'** of a linked list is the first node.
 - Dynamic size
 - Easy insertion and deletion
 ### Cons
-- Can't random access. Need to access all elements sequentially starting from begining
+- Can't random access. Need to access all elements sequentially starting from beginning
 - Need to have space for pointer along with each element
 
 ### Runner Technique
