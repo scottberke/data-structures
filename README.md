@@ -1,4 +1,4 @@
-[![Build Status][travis-badge]][travis-link]
+[![Build Status](https://travis-ci.org/scottberke/data-structures.svg?branch=master)](https://travis-ci.org/scottberke/data-structures)
 # Data Structures
 Collection of helpful data structures and related CS topics.
 
