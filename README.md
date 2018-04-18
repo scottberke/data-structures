@@ -1,3 +1,4 @@
+[![Build Status][travis-badge]][travis-link]
 # Data Structures
 Collection of helpful data structures and related CS topics.
 
