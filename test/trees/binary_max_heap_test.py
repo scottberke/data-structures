@@ -90,7 +90,7 @@ class BinaryMaxHeapTest(unittest.TestCase):
     def test_max_heap_insert_larger(self):
         heap = self.create_heap(100)
         heap.insert(random.randint(0,100))
-        self.assertTrue(
+        self.assertFalse(
             self.check_balanced_heap(heap)
         )
 
