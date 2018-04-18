@@ -3,14 +3,14 @@ Collection of helpful data structures and related CS topics.
 
 ## Primitive Data Types
 Primitive data types are data types provided as a basic building block in a language. These can be though of as ‘basic data types’ such as integers, booleans, floating point numbers, characters, strings.  Composite data types are built using primitive data types. Understanding memory (RAM), bits and bytes provides a good foundation for understanding primitives:
-- [Bits and Bytes](./primitives/bits-bytes-binary-memory.md#bits-and-bytes)
-- [Binary](./primitives/bits-bytes-binary-memory.md#binary)
-- [Memory](./primitives/bits-bytes-binary-memory.md#memory)
-- [Integers](./primitives/primitives.md#integers)
-- [Floating Point Numbers](./primitives/primitives.md#floating-point-numbers)
-- [Characters](./primitives/primitives.md#characters)
-- [Booleans](./primitives/primitives.md#booleans)
-- [Pointers](./primitives/primitives.md#pointers)
+- [Bits and Bytes](./data_structures/primitives/bits-bytes-binary-memory.md#bits-and-bytes)
+- [Binary](./data_structures/primitives/bits-bytes-binary-memory.md#binary)
+- [Memory](./data_structures/primitives/bits-bytes-binary-memory.md#memory)
+- [Integers](./data_structures/primitives/primitives.md#integers)
+- [Floating Point Numbers](./data_structures/primitives/primitives.md#floating-point-numbers)
+- [Characters](./data_structures/primitives/primitives.md#characters)
+- [Booleans](./data_structures/primitives/primitives.md#booleans)
+- [Pointers](./data_structures/primitives/primitives.md#pointers)
 
 ### Practice Problems
 - [Int To Binary](./practice_problems/primitives/practice_problems.md#int-to-binary)
@@ -18,10 +18,10 @@ Primitive data types are data types provided as a basic building block in a lang
 - [ATOI](./practice_problems/primitives/practice_problems.md#atoi)
 
 ## Basic Composite Data types
-- [Arrays](./basic_composites/array.md)
-- [Linked Lists](./basic_composites/linked_lists/linked_list.md)
-- [Stacks](./basic_composites/stacks/stack.md)
-- [Queues](./basic_composites/queues/queues.md)
+- [Arrays](./data_structures/basic_composites/array.md)
+- [Linked Lists](./data_structures/basic_composites/linked_lists/linked_list.md)
+- [Stacks](./data_structures/basic_composites/stacks/stack.md)
+- [Queues](./data_structures/basic_composites/queues/queues.md)
 
 ### Practice Problems
 #### Linked Lists
@@ -38,9 +38,9 @@ Primitive data types are data types provided as a basic building block in a lang
 - [Reverse Message Strings](./practice_problems/misc/practice_problems.md#reverse-message-strings)
 
 ## Trees and Graphs
-- [Trees](./basic_composites/trees/trees.md)
-- [Heaps](./basic_composites/trees/trees.md#binary-heap)
-- [Graphs](./basic_composites/graphs/graphs.md)
+- [Trees](./data_structures/basic_composites/trees/trees.md)
+- [Heaps](./data_structures/basic_composites/trees/trees.md#binary-heap)
+- [Graphs](./data_structures/basic_composites/graphs/graphs.md)
 
 ### Practice Problems
 - [Route Between Nodes](./practice_problems/graphs/practice_problems.md#route-between-nodes)
