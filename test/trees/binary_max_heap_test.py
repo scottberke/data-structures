@@ -96,7 +96,6 @@ class BinaryMaxHeapTest(unittest.TestCase):
 
     def test_max_heap_poll(self):
         heap = self.create_heap(10)
-        print(heap)
         root = heap[0]
         polled = heap.poll()
         self.assertTrue(
