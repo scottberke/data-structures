@@ -2,7 +2,7 @@ import unittest
 from io import StringIO
 from contextlib import *
 import random
-from adjacency_matrix_graph import *
+from data_structures.basic_composites.graphs.adjacency_matrix_graph import *
 
 class AdjacencyMatrixTest(unittest.TestCase):
     # Helpers
