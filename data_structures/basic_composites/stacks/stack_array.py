@@ -3,7 +3,8 @@ An implementation of a stack using an array
 Author: Scott Berke
 """
 class Stack(list):
-    def __init__(self):
+    def __init__(self, name=None):
+        self.name = name
         pass
 
     def push(self, data):
