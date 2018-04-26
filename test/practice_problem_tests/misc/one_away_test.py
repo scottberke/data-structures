@@ -1,5 +1,5 @@
 import unittest
-from one_away import *
+from practice_problems.misc.one_away import *
 
 class OneAwayTest(unittest.TestCase):
     def test_one_away_change_char(self):

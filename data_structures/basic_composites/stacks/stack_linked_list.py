@@ -2,8 +2,6 @@
 An implementation of a stack using a linked list
 Author: Scott Berke
 """
-import sys
-sys.path.append('../../basic_composites/linked_lists')
 from data_structures.basic_composites.linked_lists.linked_list import *
 
 class Stack(LinkedList):

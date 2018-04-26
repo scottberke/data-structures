@@ -1,6 +1,4 @@
-import sys
-sys.path.append('../../basic_composites/linked_lists')
-from linked_list import *
+from data_structures.basic_composites.linked_lists.linked_list import *
 
 # TODO:
 # Implement recursive version

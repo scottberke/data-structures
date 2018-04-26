@@ -1,5 +1,5 @@
 import unittest
-from check_permutations import *
+from practice_problems.misc.check_permutations import *
 
 class CheckPermutationsTest(unittest.TestCase):
     def test_find_true_permutation(self):

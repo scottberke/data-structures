@@ -1,5 +1,5 @@
 import unittest
-from sort_stack import *
+from practice_problems.stacks.sort_stack import *
 import random
 
 class SortStackTest(unittest.TestCase):

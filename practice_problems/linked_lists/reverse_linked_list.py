@@ -1,6 +1,4 @@
-import sys
-sys.path.append('../../basic_composites/linked_lists')
-from linked_list import *
+from data_structures.basic_composites.linked_lists.linked_list import *
 
 # O(n) where n is the length of the linked list
 def reverse_linked_list(linked_list):
@@ -14,7 +12,7 @@ def reverse_linked_list(linked_list):
         current_node.next = swap_node.next
         # Point the swap node next neighbor to the lists head
         swap_node.next = linked_list.head
-        # Update linked list head to the swap node 
+        # Update linked list head to the swap node
         linked_list.head = swap_node
 
     return linked_list

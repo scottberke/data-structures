@@ -1,7 +1,4 @@
-import sys
-sys.path.append('../../basic_composites/stacks')
-from stack_array import *
-
+from data_structures.basic_composites.stacks.stack_array import *
 
 def sort_stack(stack):
     # Create holding stack

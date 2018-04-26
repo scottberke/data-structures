@@ -1,6 +1,6 @@
 import unittest
 
-from reverse_message_string import *
+from practice_problems.misc.reverse_message_string import *
 
 class ReverseMessageStringsTest(unittest.TestCase):
     def test_reverse_message_string_simple(self):

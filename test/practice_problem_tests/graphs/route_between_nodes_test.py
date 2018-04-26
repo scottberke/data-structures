@@ -1,13 +1,11 @@
 import unittest
-from route_between_nodes import *
+from practice_problems.graphs.route_between_nodes import *
 
 class RouteBetweenNodesTest(unittest.TestCase):
     # Helpers
     def create_graph(self, nodes):
         matrix = AdjacencyMatrix(len(nodes))
-        for n_index, node in enumerate(nodes):
-            for e_index, edge in enumerate(node):
-                matrix.add_edge(n_index, e_index, nodes[n_index][e_index])
+        matrix.add_nodes_from_array(nodes)
 
         return matrix
 

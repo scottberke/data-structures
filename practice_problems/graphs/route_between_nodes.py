@@ -1,6 +1,4 @@
-import sys
-sys.path.append('../../basic_composites/graphs')
-from adjacency_matrix_graph import *
+from data_structures.basic_composites.graphs.adjacency_matrix_graph import *
 from collections import deque
 
 

@@ -1,5 +1,5 @@
 import unittest
-from kth_to_last import *
+from practice_problems.linked_lists.kth_to_last import *
 
 class KthToLastTest(unittest.TestCase):
     # Helpers

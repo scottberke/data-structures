@@ -1,6 +1,6 @@
 import unittest
 import random
-from binary_to_int import *
+from practice_problems.primitives.binary_to_int import *
 
 class BinaryToIntTest(unittest.TestCase):
     def test_binary_to_int_1(self):

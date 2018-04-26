@@ -1,9 +1,6 @@
 import unittest
+from practice_problems.linked_lists.remove_dups import *
 
-import sys
-sys.path.append('../../basic_composites/linked_lists')
-from remove_dups import *
-from linked_list import *
 
 class RemoveDupsTest(unittest.TestCase):
     # Helpers

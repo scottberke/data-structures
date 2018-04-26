@@ -1,6 +1,6 @@
 import unittest
 import random
-from reverse_linked_list import *
+from practice_problems.linked_lists.reverse_linked_list import *
 
 
 class ReverseLinkedListTest(unittest.TestCase):
@@ -55,7 +55,7 @@ class ReverseLinkedListTest(unittest.TestCase):
         arr = random.sample(range(100), 100)
         linked_list = self.create_linked_list_from_arr(arr)
         linked_list = reverse_linked_list(linked_list)
-        
+
         current_node = linked_list.head
         for item in arr[::-1]:
             self.assertEqual(

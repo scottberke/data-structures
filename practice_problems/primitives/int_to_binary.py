@@ -1,4 +1,3 @@
-
 # O(log n) where n is the number. n is halved each iteration
 def int_to_binary(int):
     res = ''

@@ -1,5 +1,5 @@
 import unittest
-from atoi import *
+from practice_problems.primitives.atoi import *
 from io import StringIO
 from contextlib import *
 
