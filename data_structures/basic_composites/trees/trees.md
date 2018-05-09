@@ -98,7 +98,7 @@ These trees maintain a balanced state by using 'tree rotations'. A tree rotation
 
 
 ### Binary Heap
-A Binary Heap is a specific type of Binary Tree that is not sorted however, it does conform to a particular order. Binary heaps are complete in that all levels, except for the last level, are full. They can either be **min heaps** or **max heaps**. A min heap has the lowest value in the tree at the root while the max heap has the largest possible value at the root of the tree. A heap is commonly implemented as an array. Children of a node/index in a heap are located at **(2*index + 1) and (2*index + 2)**.
+A Binary Heap is a specific type of Binary Tree that is not sorted, however, it does conform to a particular order. Binary heaps are complete in that all levels, except for the last level, are full. They can either be **min heaps** or **max heaps**. A min heap has the lowest value in the tree at the root while the max heap has the largest possible value at the root of the tree. A heap is commonly implemented as an array. Children of a node/index in a heap are located at **(2*index + 1) and (2*index + 2)**.
 
 A heap is an efficient example of a priority queue. Heaps are used in Dijkstra's algorithm.
 
