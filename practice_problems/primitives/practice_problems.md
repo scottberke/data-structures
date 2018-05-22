@@ -3,9 +3,13 @@
 ## Int To Binary
 Q) Write a function to convert an integer to it's binary representation.
 
+#### Python
 - [Int To Binary](../practice_problems/primitives/int_to_binary.py)
 - [Int To Binary Test Cases](../../test/practice_problem_tests/primitives/int_to_binary_test.py)
 
+#### Ruby
+- [Int To Binary](../practice_problems/primitives/int_to_binary.rb)
+- [Int To Binary Test Cases](../../spec/practice_problems/primitives/int_to_binary_spec.rb)
 
 ## Binary To Int
 Q) Write a function to convert a binary digit into it's integer representation.
