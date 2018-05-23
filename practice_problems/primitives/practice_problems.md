@@ -14,8 +14,14 @@ Q) Write a function to convert an integer to it's binary representation.
 ## Binary To Int
 Q) Write a function to convert a binary digit into it's integer representation.
 
+#### Python
 - [Binary To Int](../practice_problems/primitives/binary_to_int.py)
 - [Binary To Int Test Cases](../../test/practice_problem_tests/primitives/binary_to_int_test.py)
+
+#### Ruby
+- [Binary To Int](../practice_problems/primitives/binary_to_int.rb)
+- [Binary To Int Test Cases](../../spec/practice_problems/primitives/binary_to_int_spec.rb)
+
 
 ## ATOI
 Q) Write a function to convert a string representing an integer into an integer.
