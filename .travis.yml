@@ -10,4 +10,5 @@ matrix:
     - language: ruby
       rvm:
         - 2.4.0
-      script: bundle exec rspec ./spec   
+      gemfile: ./GemFile  
+      script: bundle exec rspec ./spec
