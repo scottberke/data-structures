@@ -1,6 +1,13 @@
-language: python
-python:
-  - 3.6
+matrix:
+  include:
+    - language: python
+      python:
+        - 3.6
 
-install: true
-script: python3 -m unittest discover -s . -p '*_test.py'
+      install: true
+      script: python3 -m unittest discover -s . -p '*_test.py'
+
+    - language: ruby
+      rvm:
+        - 2.4.0
+      script: bundle exec rspec ./spec   
