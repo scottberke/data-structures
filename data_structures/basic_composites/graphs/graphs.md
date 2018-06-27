@@ -21,7 +21,7 @@ A common representation of a graph is that of an Adjacency Matrix. An adjacency 
 Another common representation of a graph is an Adjacency List. Similar to an adjacency matrix, an adjacency list stores nodes and their adjacent nodes:
 
 ```
-                  Examples: 
+                  Examples:
   0:  [1, 2, 4]   <- Node 0 is connected to 1, 2 and 4
   1:  [0, 2]      <- Node 1 is connected to 0 and 2
   2:  [1, 3]      <- Node 2 is connected to 1 and 3
@@ -33,10 +33,12 @@ Another common representation of a graph is an Adjacency List. Similar to an adj
 
 ## Implementation
 - [Graph - Python](./graph.py)
-- [Graph Test Cases - Python](./graph_test.py)
+- [Graph Test Cases - Python](../../test/graphs/graph_test.py)
 - [Adjacency Matrix - Python](./adjacency_matrix_graph.py)
-- [Adjacency Matrix Test Cases - Python](./adjacency_matrix_graph_test.py)
+- [Adjacency Matrix Test Cases - Python](../../test/graphs/adjacency_matrix_graph_test.py)
 
+- [Graph - Ruby](./graph.rb)
+- [Graph Test Cases - Ruby](../../spec/basic_composites/graphs/graph_spec.py)
 
 ## Practice Problems
 - [Route Between Nodes](../../practice_problems/graphs/practice_problems.md#route-between-nodes)
