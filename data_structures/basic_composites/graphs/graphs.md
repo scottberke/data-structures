@@ -38,7 +38,9 @@ Another common representation of a graph is an Adjacency List. Similar to an adj
 - [Adjacency Matrix Test Cases - Python](../../test/graphs/adjacency_matrix_graph_test.py)
 
 - [Graph - Ruby](./graph.rb)
-- [Graph Test Cases - Ruby](../../spec/basic_composites/graphs/graph_spec.py)
+- [Graph Test Cases - Ruby](../../spec/basic_composites/graphs/graph_spec.rb)
+- [Adjacency Matrix - Ruby](./adjacency_matrix_graph.rb)
+- [Adjacency Matrix Test Cases - Ruby](../../spec/basic_composites/graphs/adjacency_matrix_graph_spec.rb)
 
 ## Practice Problems
 - [Route Between Nodes](../../practice_problems/graphs/practice_problems.md#route-between-nodes)
