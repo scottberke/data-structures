@@ -89,7 +89,7 @@ describe 'Graph' do
 
         graph.add_node(src)
 
-        expect { graph.add_edge(src: src, dest: dest) } .to raise_error
+        expect { graph.add_edge(src: src, dest: dest) } .to raise_error ArgumentError
       end
     end
   end

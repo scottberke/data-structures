@@ -27,9 +27,9 @@ class Graph
     src = fetch_node(src)
     dest = fetch_node(dest)
 
-    raise "src and dest must exist" unless src && dest
+    raise ArgumentError, "src and dest must exist" unless src && dest
 
-    src.add_edge(dest) 
+    src.add_edge(dest)
   end
 
   def fetch_node(node)
