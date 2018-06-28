@@ -8,7 +8,7 @@ The hashing function should create a unique output from the provided key but, th
 
 Avoiding collisions by making use of a linked list is a common approach. Each spot in the hash tables array will map to a linked list of items. The linked list will contain the un-hashed key so that in the event of a collision, the hashed key is used to find the correct array bucket and the linked list is traversed to find the correct item. Collisions of this nature happen but are uncommon.
 
-Linear probing is also a method for dealing with collisions. If a collision occurs, the hash table will look for an adjacent spot in the array to store the data. 
+Linear probing is also a method for dealing with collisions. If a collision occurs, the hash table will look for an adjacent spot in the array to store the data.
 
 In Python, hash tables come in the form of a dict.
 ```python
@@ -21,4 +21,7 @@ In Python, hash tables come in the form of a dict.
 
 ## Implementation
 - [Hash Table - Python](./hash_table.py)
-- [Hash Table Test Cases - Python](./hash_table_test.py)
+- [Hash Table Test Cases - Python](../../test/hash_table/hash_table_test.py)
+
+- [Hash Table - Ruby](./hash_table.rb)
+- [Hash Table Test Cases - Ruby](../../spec/basic_composites/hash_table/hash_table_spec.rb)
